@@ -1,0 +1,160 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	line-height: 1.8em;
+	font-family: 'Lato', serif, sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+
+.bgimage1{
+	background-image: url('assets/img/low-day.jpeg');
+	min-height: 100vh;
+}
+
+.bgimage2{
+	background-image: url('assets/img/blur-lights.jpg');
+	height: 400px;
+}
+
+.bgimage3{
+	background-image: url('assets/img/highway-blur.jpeg');
+	height: 400px;
+}
+
+.bgimage4{
+	background-image: url('assets/img/people-walk.jpeg');
+	height: 400px;
+}
+
+.bgimage1,
+.bgimage2,
+.bgimage3,
+.bgimage4{
+	position: relative;
+	opacity: 0.7;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.overlay{
+	display: none;
+}
+.wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000;
+	width: 100%;
+	height: 100vh;
+	z-index: 9;
+	opacity: 0.7;
+}
+
+.inner_image{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 80vh;
+	background: #fff;
+	margin: 5%;
+	background-image: url('assets/img/low-day.jpeg');
+	background-size: cover;
+	z-index: 10;
+	border: solid 2px #fff;
+	border-radius: 1px;
+	box-shadow: 0px 0px 35px #000;
+}
+
+.cross_btn{
+	position: relative;
+	display: block;
+	top: 4%;
+	left: 96%;
+	width: 50px;
+	height: 50px;
+}
+
+.cross_btn::before{
+	content: "";
+	position: absolute;
+	top: -14%;
+	left: 41%;
+	width: 7px;
+	height: 60px;
+	background-color: #f4f4f4;
+	border-radius: 2px;
+	transform: rotate(45deg);
+}
+
+.cross_btn::after{
+	content: "";
+	position: absolute;
+	top: -14%;
+	left: 41%;
+	width: 7px;
+	height: 60px;
+	background-color: #f4f4f4;
+	border-radius: 2px;
+	transform: rotate(-45deg);
+}
+
+.content-section{
+	text-align: center;
+	padding: 50px 80px;
+	
+}
+
+.light{
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+.dark{
+	background-color: #282e34;
+	color: #f2f2f2;
+}
+
+.bgcontent{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	text-align: center;
+	font-size: 25px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	
+}
+
+.text{
+	background-color: #000;
+	color: #fff;
+	padding: 20px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.transp{
+	background-color: transparent;
+	color: #f2f2f2;
+}
+
+
+
+@media(max-width: 540px){
+	
+.bgimage1{
+	min-height: 400px;
+}
+
+.bgimage1,
+.bgimage2,
+.bgimage3,
+.bgimage4{
+	background-attachment: scroll;
+	}
+}

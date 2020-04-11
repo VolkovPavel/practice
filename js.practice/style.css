@@ -1,0 +1,274 @@
+body{
+	width: 100%;
+	margin: 0;
+  	padding: 0;
+	font-family: serif,sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	color: #000;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.main_title{
+	flex-basis: 100%;
+	padding: 25px 0;
+	text-align: center;
+	font-size: 3em;
+	font-style: italic;
+	font-weight: normal;
+	text-decoration: underline;
+	transition: all ease 0.3s;
+}
+
+@media (max-width: 900px){
+	.main_title{
+		font-size: 30px;
+	}
+}
+@media (max-width: 600px){
+	.main_title{
+		font-size: 20px;
+	}
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+div{
+	width: 50%;
+	background: #866;
+	border-radius: 5px;
+	border: 2px solid #333;
+}
+
+h2{
+	text-align: center;
+	font-weight: 100;
+	color: #fff;
+}
+
+.sec-calc .list,
+.adding .area{
+	list-style: none; 
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sec-calc .list .item{
+	margin-right: 10px;
+}
+
+a{
+	display: block;
+	padding: 3px 10px 5px 10px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	line-height: 21px;
+	background: #756;
+	color: #000;
+	border-radius: 5px;
+	opacity: 0.7;
+	transition: all ease 0.2s;
+	box-shadow: 2px 2px 1px 1px #111;
+	width: 100px;
+	margin: 10px auto;
+}
+
+a:hover{
+	cursor: pointer;
+	background: #333;
+	color: #866;
+	opacity: 0.7;
+	transform: scale(1.1);
+}
+
+a:active{
+	background: #000;
+	color: #fff;
+	transform: scale(0.7);
+	opacity: 0.7;
+}
+.cards{
+	padding-top: 55px;
+}
+
+.cards-list{
+	list-style: none; 
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.cards-item{
+	width: 100px;
+	height: 100px;
+	background: #ccc;
+	border: 1px solid #000;
+	margin: 0 10px 10px 10px;
+	transition: all ease-in-out 0.3s;
+}
+ 
+.yellow-card{
+	background: yellow;
+}
+.adding .area li{
+	background: #ccc;
+	border: 1px solid #000;
+	margin: 0 10px 10px 10px;
+	transition: all ease-in-out 0.3s;
+	border-radius: 5%;
+	text-align: center;
+	line-height: 100px;
+	font-size: 50px;
+	padding: 0 5px;
+}
+
+.interval-animation {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.interval-animation h2,
+.target-wrap{
+	flex-basis: 100%;
+}
+
+.target-wrap{
+	background: #aaa;
+	border-radius: 35px;
+	margin: 0 20px;
+	padding: 5px;
+	border: 2px solid #333;
+}
+
+.animation-target{
+	width: 50px;
+	height:50px;
+	background: #333;
+	border-radius: 50%;
+	box-shadow: 0px 0px 3px 3px #f2f2f2;
+	margin: 0 auto;
+}
+
+.interval-animation a{
+	width: 0;
+	height: 0;
+	position: relative;
+	padding: 10px;
+}
+
+.interval-animation a::before,
+.interval-animation a::after{
+	content:'';
+	position: absolute;
+	width: 5px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	transition: all ease 0.3s;
+}
+
+.btnLeft::before{
+	top:-5px;
+	left: -22px;
+	transform: rotate(47deg);
+}
+
+.btnLeft::after{
+	top: 5px;
+	left: -22px;
+	transform: rotate(-47deg);
+}
+
+.btnRight::before{
+	top:-5px;
+	right: -22px;
+	transform: rotate(135deg);
+}
+
+.btnRight::after{
+	top: 5px;
+	right: -22px;
+	transform: rotate(-135deg);
+}
+
+.btnCenter::before{
+	top: 2px;
+	right: -13px;
+}
+
+.btnCenter::after{
+	top: 2px;
+	right: 25px;
+}
+
+.interval-animation a:hover::before,
+.interval-animation a:hover::after{
+	background: #333;
+}
+h3{
+	font-size: 18px;
+	font-weight:normal;
+	color: #f2f2f2;
+	text-align: center;
+}
+
+.xy-field{
+	width: 400px;
+	height: 130px;
+	background: #333;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+.xy-field p{
+	padding-left: 175px;
+	color: #fff;
+}
+.xy-field p span{
+	color: #fff;
+}
+
+.folow-item,
+.click-ball{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 50%;
+}
+
+.map-field{
+	margin: 0 auto 100px auto;
+	background: #333;
+	border-color: azure;
+}
+
+.map-field span{
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+}
+
+.treasure-map{
+	width: 99%;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.oop-fun,
+.oop-prot{
+	position: relative;
+	height: 200px;
+}
+
+.return-blocks{
+	display: none;
+}
